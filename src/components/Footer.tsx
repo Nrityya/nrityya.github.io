@@ -6,7 +6,7 @@ import '../assets/styles/Footer.scss'
 function Footer() {
   return (
     <footer>
-      <p>A portfolio designed & built by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a> </p>
+      <p> © {new Date().getFullYear()} Nrityya Sivakumar Annu — Design inspired by Yuji Sato. </p>
     </footer>
   );
 }
