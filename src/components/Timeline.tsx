@@ -1,67 +1,101 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import '../assets/styles/Timeline.scss'
+import '../assets/styles/Timeline.scss';
 
 function Timeline() {
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
+        <h1>Timeline</h1>
         <VerticalTimeline>
+
+          {/* 🎓 Education - Master's */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+            date="Aug 2024 – Dec 2025"
+            iconStyle={{ background: '#e50914', color: 'white' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              The University of Texas at Dallas
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              M.S. in Computer Science (Data Science Track)
+            </h4>
+            <p>
+              GPA: 3.5 &nbsp;
+            </p>
+            <p>
+              Coursework: Artificial Intelligence, Database Design, Machine Learning, NLP, Big Data
+            </p>
+          </VerticalTimelineElement>
+
+          {/* 🎓 Education - Bachelor's */}
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+            date="Aug 2020 – May 2024"
+            iconStyle={{ background: '#e50914', color: 'white' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              The University of Texas at Dallas
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              B.S. in Computer Science (Data Science Certificate)
+            </h4>
+            <p>
+              GPA: 3.7 &nbsp; • &nbsp; Recipient of Jonsson School Academic Success Scholarship (2020)
+            </p>
+            <p>
+              Coursework: Artificial Intelligence, Operating Systems, Machine Learning, Intro to Data Analysis, Computer Architecture, 
+              Data Structures & Algorithms, Advanced Algorithm Design, Systems Programming (UNIX), Programming Language Paradigms.
+            </p>
+          </VerticalTimelineElement>
+
+          {/* 💼 Experience - Sabre */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+            date="May 2024 – Aug 2024"
+            iconStyle={{ background: '#e50914', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Software Engineering Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Sabre · Southlake, TX</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Managed and maintained airline database collections in MS Server — updated and deleted 700+ forms based on client needs.
+              Contributed to migration from AWS to Google Cloud using K2 workflows.  
+              Conducted unit and security testing, improving overall software reliability.  
+              Supported workflow management through Sabre ServiceNow (SNOW).
             </p>
           </VerticalTimelineElement>
+
+          {/* 💼 Experience - Spicyfy */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid white' }}
+            date="May 2023 – Aug 2023"
+            iconStyle={{ background: '#e50914', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Artificial Intelligence Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Spicyfy · Dallas, TX</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Developed a <strong>Google-approved Gmail plugin</strong> integrating Akshara API to rephrase text in 15 tones, 
+              built with JavaScript, Node.js, and Firebase.  
+              Designed and trained stock prediction models using Python with Linear Regression, SVM, Neural Networks, and Random Forests.
             </p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
-            </p>
-          </VerticalTimelineElement>
+
         </VerticalTimeline>
       </div>
     </div>
