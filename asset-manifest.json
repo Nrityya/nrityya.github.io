@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://nrityya.github.io/static/css/main.27c220de.css",
+    "main.css": "https://nrityya.github.io/static/css/main.655b0a83.css",
     "main.js": "https://nrityya.github.io/static/js/main.033a07a3.js",
     "static/js/453.b05d8aa5.chunk.js": "https://nrityya.github.io/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-dark.png": "https://nrityya.github.io/static/media/bg-dark.91efa4c071c32e73c347.png",
     "static/media/bg-light.png": "https://nrityya.github.io/static/media/bg-light.bac0efb485244a522981.png",
     "index.html": "https://nrityya.github.io/index.html",
-    "main.27c220de.css.map": "https://nrityya.github.io/static/css/main.27c220de.css.map",
+    "main.655b0a83.css.map": "https://nrityya.github.io/static/css/main.655b0a83.css.map",
     "main.033a07a3.js.map": "https://nrityya.github.io/static/js/main.033a07a3.js.map",
     "453.b05d8aa5.chunk.js.map": "https://nrityya.github.io/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27c220de.css",
+    "static/css/main.655b0a83.css",
     "static/js/main.033a07a3.js"
   ]
 }
